@@ -1,0 +1,536 @@
+@media only screen and (min-device-width: 1280px)
+    #drop-down_btn
+        display: none
+
+@media only screen and (max-device-width: 1280px)
+    #drop-down_btn
+        display: none
+
+    .footer-top
+        &__container
+            grid-template-columns: repeat(3, auto)
+
+        &__shopping
+            grid-area: 1 / 2 / 2 / 3
+
+        &__more-link
+            grid-area: 1 / 3 / 2 / 4
+
+        &__blog
+            display: none
+
+@media only screen and (max-device-width: 968px)
+    .top-bar__icons
+        width: 40%
+
+    #drop-down_btn
+        display: none
+
+    .hotdeals__img > img, .goods__img > img, .products__hover, .products__img > img
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: scale-down
+
+    .subscribe
+        height: 157px
+        margin: 0px 0px 77px 0px
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        &__text-block
+            width: 80%
+
+        &__form
+            width: 80%
+
+    .footer-top
+        &__container
+            grid-template-columns: repeat(2, auto)
+
+        &__shopping
+            grid-area: 1 / 2 / 2 / 3
+
+        &__more-link
+            display: none
+
+@media only screen and (max-device-width: 768px)
+    =font($fz, $lh)
+        font-size: $fz
+        line-height: $lh
+    
+    .header
+        margin: 0 10px 0 10px
+
+    .top-bar
+        &__icons
+            width: 40%
+
+        &__search
+            display: none
+
+    .middle-bar,
+    .lower-bar
+        display: none
+
+    #wishlist_place
+        display: none
+
+    #drop-down_btn
+        display: flex
+        align-self: center
+
+    .hotdeals__link
+        +font(2rem, 1.17)
+
+    .products__block_hover
+        top: 30%
+        left: 30%
+        right: 25%
+
+    .primary-button
+        width: 35%
+        height: 51px
+        margin-top: 87px
+        margin-left: 35%
+
+    .subscribe
+        height: 157px
+        margin: 0px 0px 77px 0px
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        &__text-block
+            width: 80%
+
+        &__form
+            width: 80%
+
+    .footer-top
+        padding: 40px 32px 48px
+
+        &__container
+            justify-content: center
+            grid-template-columns: auto
+            grid-template-rows: repeat(3, auto)
+            grid-row-gap: 0
+
+        &__shopping
+            grid-area: 2 / 1 / 3 / 2
+
+        &__socnet
+            grid-area: 3 / 1 / 4 / 2
+
+        &__item
+            margin: 22px 0
+
+        &__item:first-child
+            margin-top: 0
+
+        &__item:last-child
+            margin-bottom: 0
+
+        &__socnet
+            margin-top: 50px
+
+        &__link
+            text-transform: uppercase
+            font-weight: 700
+
+    .footer-info
+        &__logo
+            text-align: center
+
+        &__phone
+            order: -1
+
+    .footer-info__address,
+    .footer-top__list
+        margin-top: 64px
+        align-items: center
+
+    .hide-mobile
+        display: none
+
+@media only screen and (max-device-width: 425px)
+    %ruleimg
+        position: relative
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: scale-down
+
+    .footer-bottom
+        padding: 11px 0
+
+    =font($fz, $lh)
+        font-size: $fz
+        line-height: $lh
+
+    .header
+        margin: 0 10px 0 10px
+
+    .top-bar
+        &__icons
+            width: 40%
+
+        &__search
+            display: none
+
+    #drop-down_btn
+        display: flex
+        align-self: center
+
+    .btn
+        max-width: 124px
+
+    .hotdeals
+        margin-bottom: 60px
+
+        &__block
+            margin: 30% 10% 20% 10%
+
+        &__title
+            +font(0.875rem, 1.17)
+
+        &__link
+            +font(1.25rem, 1.17)
+
+        &__btn
+            margin: 0px
+
+    .screen2__title
+        +font(1.5rem, 1.17)
+
+        display: block
+        margin-bottom: 25px
+
+    .products
+        display: table-header-group
+        position: relative
+        margin: 0px
+
+        &__rating
+            display: none
+
+        &__img
+            height: 100%
+
+        &__wrapper
+            margin: 0px 0px 96px 26px
+            position: relative
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+
+        &__slider
+            position: relative
+            height: auto
+            overflow: hidden
+
+        &__items
+            width: 300%
+            height: 100%
+            display: flex
+
+        &__item
+            width: 100%
+            position: relative
+            height: 260px
+            display: block
+
+        &__block
+            position: absolute
+            bottom: 0px
+            left: 0px
+            right: 0px
+            height: 25%
+            justify-content: space-around
+            color: white
+            background-color: #B7B79A
+            opacity: 0.6
+            padding: 14px
+
+        &__nav
+            position: absolute
+            bottom: -50px
+            width: 100%
+            z-index: 2
+            display: flex
+            justify-content: center
+
+        &__nav > label
+            height: 9px
+            width: 9px
+            border-radius: 8px
+            margin: 4px
+            cursor: pointer
+            background-color: #C4C4C4
+            opacity: 0.5
+            transition: all 0.4s ease
+
+        &__nav > label:hover
+            opacity: 0.8
+            transform: scale(1.1)
+            background-color: #222222
+
+        &__item_hover
+            display: none
+
+        &__block
+            margin: 0px
+
+        &__hover-bar
+            display: none
+
+        &__price
+            +font(1.25rem, 1.17)
+
+    .products__img > img
+        @extend %ruleimg
+
+        object-fit: fill
+
+    .products__block > a
+        +font(1rem, 1.17)
+
+        color: #ffff
+        margin-bottom: 9px
+
+    #s1:checked ~ .s1
+        margin-left: 0
+
+    #s2:checked ~ .s1
+        margin-left: -20%
+
+    #s3:checked ~ .s1
+        margin-left: -40%
+
+    #s4:checked ~ .s1
+        margin-left: -60%
+
+    #s5:checked ~ .s1
+        margin-left: -80%
+
+    #s6:checked ~ .s1
+        margin-left: -100%
+
+    .goods
+        display: table-footer-group
+        margin: 0px 0px 90px 0px
+
+        &__card_dark
+            display: none
+
+        &__cards
+            grid-template-columns: 1fr
+            gap: 0
+
+        &__block
+            margin: 20% 7% 15% 7%
+
+    .promo
+        margin-top: 24px
+        margin-bottom: 0
+
+        &__img
+            display: grid
+            background-image: url("../images/promo-banner.jpg")
+            background-size: cover
+            height: 204px
+            width: 100%
+
+        &__text-box
+            position: relative
+            width: 192px
+            height: 139px
+            margin: 2.25rem 2.25rem 1.81rem 2.25rem
+            background: rgba(255, 255, 255, 0.9)
+
+        &__text-wrapper
+            position: absolute
+            width: 152px
+            height: 95px
+            margin: 1.37rem 1.25rem
+
+        &__title
+            padding: 0
+            font-size: 1.25rem
+            line-height: 1.44rem
+            font-weight: 700
+            text-transform: uppercase
+
+        &__description
+            display: none
+
+        &__button
+            margin-top: 1.5rem
+            margin-left: 0.75rem
+            height: 48px
+            width: 124px
+            font-weight: 700
+            font-size: 0.875rem
+            line-height: 1rem
+            text-transform: uppercase
+
+        &__link
+            text-decoration: none
+            color: #323334
+
+        &__button:hover
+            display: none
+
+        &__link:hover
+            color: #fff
+
+        &__price
+            display: none
+
+        &__price-old
+            display: none
+
+    .top-rating
+        display: grid
+        margin: 60px 0 77px 16px
+
+        &__items
+            display: grid
+            grid-template-columns: minmax(300px, 1fr)
+            gap: 2.18rem
+
+        &__title
+            font-weight: 700
+            font-size: 1.5rem
+            line-height: 1.75rem
+            text-transform: uppercase
+            margin-top: 0
+            margin-bottom: 24px
+
+        &__item
+            display: grid
+            grid-template-columns: 130px minmax(149px, 1fr)
+            grid-template-areas: "top-rating__image top-rating__item-details"
+            max-width: 350px
+            margin: 0
+            padding: 0
+
+        &__image
+            grid-area: top-rating__image
+
+        &__image > img
+            height: 158px
+            width: 126px
+
+        &__overlay-wrapper
+            display: none
+
+        &__overlay
+            display: none
+
+        &__icons
+            display: none
+
+        &__item-details
+            grid-area: top-rating__item-details
+            padding-top: 3px
+
+        &__item-name
+            font-size: 1rem
+            line-height: 1.5rem
+            padding-top: 10px
+            padding-bottom: 14px
+            margin: 0
+
+        &__item-price
+            font-size: 1.25rem
+            line-height: 1.44rem
+            margin-top: 0px
+
+        &__item-rating
+            height: 15px
+            padding-bottom: 19px
+
+        .item2, .item3, .item4, .item6, .item7, .item8
+            display: none
+
+    .plain-like
+        display: none
+
+    .shopping-bag
+        display: none
+
+    .primary-button
+        display: none
+
+        &-link
+            display: none
+
+        &__img > img
+            max-width: 70%
+
+        &__text-box
+            position: absolute
+            width: 192px
+            height: 139px
+            left: 38px
+            top: 36px
+            background: rgba(255, 255, 255, 0.9)
+
+        &__text-wrapper
+            width: 152px
+            height: 95px
+            margin: 22px 20px
+
+        &__title
+            padding: 0
+            margin: 0
+            font-size: 1.25rem
+            line-height: 1.44rem
+            font-weight: 700
+            text-transform: uppercase
+
+        &__description
+            visibility: hidden
+            display: none
+
+        &__button
+            height: 48px
+            width: 124px
+            font-weight: 700
+            font-size: 0.875rem
+            text-transform: uppercase
+
+        &__link
+            text-decoration: none
+            color: #323334
+
+        &__button:hover
+            display: none
+
+        &__link:hover
+            color: #fff
+
+        &__price
+            display: none
+
+        &__price-old
+            display: none
+            
+    .subscribe
+        height: 157px
+        margin: 0px 0px 77px 0px
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        &__text-block
+            width: 80%
+
+        &__form
+            width: 80%
